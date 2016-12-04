@@ -4,7 +4,7 @@ this is a repo of exercises completed during the ACC Interaction Design with CSS
 to view the exercises: 
 
 * enter johnwhaney.com/acc-interaction-design/COMPLETE/ in a new browser tab
-* navigate inside the COMPLETE folder above
+* navigate inside the COMPLETE folder in this repo
 * make note of the exercise you'd like to view and right-click copy the name of the file
 * paste the exercise name to the end of the url you entered in the new browser tab
 * hit enter to view
