@@ -39,14 +39,25 @@ table {
 }
     
 #leftBox {
-    color:#000;
+	position:absolute;
+    color:#fff;
     width:30px;
-    height: 150px;
+    height:150px;
+	left:1px;
     background:#ccc;
-    box-shadow: 3px 3px 5px #fff;
-    left:0px;
+    box-shadow: 3px 3px 5px #000;
 }
-    
+	
+#arrow {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+#jq {
+	text-align: center;
+	display: none;
+}
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -66,9 +77,11 @@ table {
     </tr>
 
 </table>
-    
+<h3>click the arrow below to see the jQuery challenge.</h3>
+<br>
 <div id="leftBox">
-    <p>jQuery is cool.</p>
+	<div id="arrow">&#9656</div>
+	<p id="jq">jQuery is cool.</p>
 </div>
 
     <script>
@@ -92,13 +105,27 @@ table {
             $('#label_off').css('color', '#000');
             $('figure').css('backgroundColor', '#666');
         }
+		
+		function plusOne(){
+			$('#arrow').css({transform:'scaleX(1)'});
+		}
+		
+		function minusOne(){
+			$('#arrow').css({transform:'scaleX(-1)'});
+		}
         
-        function slideBox(){
-            $('#leftBox').animate({left: '50px'}, 200, 'swing');
-        }
-        
-        $('#toggle').click(toggleSwitch);
-        
+        $(document).ready(function(){
+			$('#toggle').click(toggleSwitch);
+        	$('#arrow').click(function(){
+				if($('#leftBox').css('width')=='30px'){
+					$('#leftBox').animate({width:'350px'}, 500, minusOne);
+					$('#jq').show();
+				}else{
+					$('#leftBox').animate({width:'30px'}, 500, plusOne);
+					$('#jq').hide();
+				}
+        	});
+    	});
     </script>
 </body>
 </html>
