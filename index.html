@@ -15,10 +15,23 @@
             color: white;
             text-align: center;
         }
-
+        
+        @keyframes ex {
+            0% {font-size: 20px;}
+            100% {font-size: 30px;}
+        }
+        
+        @keyframes name {
+            0% {font-size: 40px;}
+            100% {font-size: 50px;}
+        }
+        
         h1 {
-        	color: #ff4d4d;
-        	font-style: italic;
+            font-size: 40px;
+        }
+        
+        h3 {
+            font-size: 20px;
         }
         
         a {
@@ -27,35 +40,37 @@
         }
 		
 		a:hover {
-			color: #ff8080;
-			transition: .33s;
+			transition: .25s;
 			font-style: italic;
 		}
         
-        #target {
-            width:100px;
-            height:100px;
-            background:#28659a;
-            position:relative;
+        #name:hover {
+            color: #0080ff;
+            animation: name .25s forwards; 
+        }
+        
+        #ex:hover {
+            color: red;
+            animation: ex .25s forwards;
         }
         
     </style>
     
 </head>
 <body>
-<h1>John Haney</h1>
+    <h1><a id="name" href="https://github.com/geojwh/" target="_blank">John Haney</a></h1>
     <h2><i>ACC Interaction Design with CSS &amp; Javascript - Dec 2016</i><br>
     <i>Exercise Portal</i></h2><br>
-        <h3><a href="COMPLETE/1-easing.html">1: Easing</a></h3>
-        <h3><a href="COMPLETE/2-keyframes.html">2: Keyframes</a></h3>
-        <h3><a href="COMPLETE/3-sequencing.html">3: Sequencing</a></h3>
-        <h3><a href="COMPLETE/4-dropdownMenu.html">4: Dropdown Menu</a></h3>
-        <h3><a href="COMPLETE/5-css-click-event.html">5: CSS Click Event</a></h3>
-        <h3><a href="COMPLETE/6-css-lightbox.html">6: CSS Lightbox</a></h3>
-        <h3><a href="COMPLETE/7-jquery.html">7: jQuery</a></h3>
-        <h3><a href="COMPLETE/8-jquery-sequencing.html">8: jQuery Sequencing</a></h3>
-        <h3><a href="COMPLETE/9-click-event.html">9: jQuery Click Event</a></h3>
-        <h3><a href="COMPLETE/10-conditional-logic.html">10: Conditional Logic</a></h3>
-		<h3><a href="COMPLETE/11-drag-and-drop.html">11: Drag and Drop</a></h3>
+        <h3><a id="ex" href="COMPLETE/1-easing.html">1: Easing</a></h3>
+        <h3><a id="ex" href="COMPLETE/2-keyframes.html">2: Keyframes</a></h3>
+        <h3><a id="ex" href="COMPLETE/3-sequencing.html">3: Sequencing</a></h3>
+        <h3><a id="ex" href="COMPLETE/4-dropdownMenu.html">4: Dropdown Menu</a></h3>
+        <h3><a id="ex" href="COMPLETE/5-css-click-event.html">5: CSS Click Event</a></h3>
+        <h3><a id="ex" href="COMPLETE/6-css-lightbox.html">6: CSS Lightbox</a></h3>
+        <h3><a id="ex" href="COMPLETE/7-jquery.html">7: jQuery</a></h3>
+        <h3><a id="ex" href="COMPLETE/8-jquery-sequencing.html">8: jQuery Sequencing</a></h3>
+        <h3><a id="ex" href="COMPLETE/9-click-event.html">9: jQuery Click Event</a></h3>
+        <h3><a id="ex" href="COMPLETE/10-conditional-logic.html">10: Conditional Logic</a></h3>
+		<h3><a id="ex" href="COMPLETE/11-drag-and-drop.html">11: Drag and Drop</a></h3>
 </body>
 </html>
