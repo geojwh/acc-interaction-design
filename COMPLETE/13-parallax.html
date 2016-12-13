@@ -28,7 +28,7 @@
         
         #screen4{background-size:cover;}
         
-        #falseBackground{background:url(../resources/background-glass.jpg) center center no-repeat; position:absolute; width:100%; height:100%; }
+        #falseBackground{background:url(../resources/background-glass.jpg) center center no-repeat; position:absolute; width:100%; height:100%;}
         
  
     </style>
@@ -40,7 +40,7 @@
     <section id="screen1"><h1 
                               data-start="top:0px; opacity:1;" 
                               data-top="top:-300px; opacity:0;"
-                              >Exercise 13 - Parallax</h1></section>
+                              >Hello, Parallax!</h1></section>
     
     
     <section id="screen2">
@@ -56,7 +56,10 @@
     
 
     <section id="screen4">
-        <div id="falseBackground"></div>
+        <div id="falseBackground"
+             data-100-top="filter:blur(0px);"
+             data-100-end="filter:blur(30px);"
+             ></div>
         <h1 
             data-100-start="filter:blur(50px);"
             data-end="filter:blur(0px);"
