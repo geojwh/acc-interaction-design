@@ -6,6 +6,8 @@
 <title>Exercise 3: Sequencing</title>
 <link href="../resources/reset.css" rel="stylesheet"/>
 <meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
     <style>
         body{text-align:center;}
 		
@@ -32,15 +34,21 @@
 			100% {font-size: 2em; filter: blur(0px);}
 		}
 		
-		h1 {animation: headlineDrop 1s ease-in;}
+		h1 {
+            font-family: 'Ubuntu', sans-serif;
+            animation: headlineDrop 1s ease-in;
+        }
 		
 		@keyframes subheadSlide {
 			0%{opacity:0; transform:translateX(-300px);}
 			100%{opacity:1; transform:translateX(0px);}
 		}
 		
-		h2 {animation: subheadSlide 1s ease 1s;
-			animation-fill-mode: both;}
+		h2 {
+            font-family: 'Ubuntu', sans-serif;
+            animation: subheadSlide 1s ease 1s;
+			animation-fill-mode: both;
+        }
 		
 		@keyframes fadeIn {
 			0%{opacity:0;}
