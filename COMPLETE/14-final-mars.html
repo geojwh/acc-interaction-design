@@ -43,13 +43,14 @@
             height: 40%;
             top: 50px;
             background: url(../resources/mars-horizon.png) no-repeat center top;
+            background-size: contain;
         }
         
         #sun, #shine {position: absolute; left: 50%;}
         
         #sun {width: 200px; height: 200px; margin-left: -100px; top: 100px;}
         
-        #shine {width: 20px; height: 20px; margin-left: -10px; top: 200px; opacity: 0;}
+        #shine {width: 20px; height: 20px; margin-left: -10px; top: 190px; opacity: 0;}
 
         h1 {letter-spacing: 0em;}
 
@@ -65,7 +66,7 @@
 
         #screen4 .info {left: 0;}
 
-        #opportunity {max-width: 40%; position: absolute: right: 15%;}
+        #opportunity {max-width: 40%; position: absolute;}
 
 
 
@@ -136,7 +137,9 @@
     <section id="screen4">
         <h2>Mars Rovers</h2>
 
-        <img id="opportunity" src="../resources/opportunity.png" />
+        <img id="opportunity" src="../resources/opportunity.png" 
+        	data-300-end="right:-50%; bottom:30%; transform:scale(.2)"
+        	data-end="right:25%; bottom:5%; transform:scale(1)" />
 
         <div class="info"
         	data-150-top="left:-25%"
