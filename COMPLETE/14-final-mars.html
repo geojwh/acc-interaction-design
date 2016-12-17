@@ -155,12 +155,12 @@
         var s = skrollr.init();
 
         $('nav li').click(function() {
-        	var destination = $(this).data('screen');
+        	var destination = $(this).data('screen2');
         	$('html, body').animate({scrollTop:$(destination).offset().top}, 2000, 'easeOutCubic');
         });
 
         $(document).scroll(function(){
-        	var activeScreen=Math.round($(document).scrollTop()/$(window).height())+1;
+        	var activeScreen = Math.round($(document).scrollTop()/$(window).height())+1;
         	$('nav li').removeClass('active');
         	$('nav li:nth-child('+activeScreen+')').addClass('active');
         });
