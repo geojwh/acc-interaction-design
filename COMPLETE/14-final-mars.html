@@ -155,7 +155,7 @@
         var s = skrollr.init();
 
         $('nav li').click(function() {
-        	var destination = $(this).data('screen2');
+        	var destination = $(this).data('screen');
         	$('html, body').animate({scrollTop:$(destination).offset().top}, 2000, 'easeOutCubic');
         });
 
